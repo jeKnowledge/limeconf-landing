@@ -7,14 +7,17 @@
   flex-direction: column;
   justify-content: center;
 }
-.description, .quote, .cta, .mission {
-  padding: 0 22em;
+.description, .cta {
+  padding: 0 20em;
+}
+.quote, .mission {
+  padding: 0 15em;
 }
 .hero, .team, .cta {
   min-height: 100vh;
 }
 .description, .quote {
-  min-height: 70vh;
+  min-height: 85vh;
 }
 .hero {
   background: linear-gradient(to top, #b3307c 0%, #ff3183 100%);
@@ -85,15 +88,23 @@
   margin: 2em 0 1em 0;
   color: var(--color-white);
 }
+.hero h5 {
+  margin-left: .5rem;
+  color: var(--color-white);
+}
+.description h3, .mission h3 {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 40px;
+}
 .description h2, .team h2 {
   padding-bottom: 1.5em;
 }
 .description h3, .team h3, .mission h3 {
   padding-bottom: 1em;
 }
-.hero h5 {
-  margin-left: .5rem;
-  color: var(--color-white);
+.quote h2 {
+  line-height: 50px;
 }
 .cta h5, .cta h3 {
   text-align: left;
@@ -104,7 +115,8 @@
   color: var(--color-black);
   margin-bottom: .5rem;
 }
-.footer_collumn h3 {
+.footer_collumn h2 {
+  font-size: 20px;
   margin-bottom: 1.5rem;
 }
 .footer .footer_collumn a {
@@ -157,6 +169,9 @@ td {
   }
   .team_info {
     margin-bottom: 5rem;
+  }
+  h4 {
+    padding: 0;
   }
 }
 @media (max-width: 900px) {

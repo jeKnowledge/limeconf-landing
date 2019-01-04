@@ -3,5 +3,6 @@
   --color-darkpink: #B3307C;
   --color-black: #191919;
   --color-white: #ffffff;
-  --color-grey: rgba(0, 0, 0, 0.05);
+  --color-grey: rgba(0,0,0,0.1);
+  --color-darkgrey: #9B9B9B;
 }
