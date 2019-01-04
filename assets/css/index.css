@@ -195,4 +195,14 @@ td {
   .footer_collumn:last-child {
     margin-top: 4rem;
   }
+  .team {
+    min-height: 150vh;
+  }
+  .quote h2 {
+    font-size: 35px;
+  }
+  .mission h3 {
+      font-size: 25px;
+      line-height: 30px;
+   }
 }
