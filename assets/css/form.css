@@ -1,27 +1,31 @@
 form {
-  width: 30em;
+  width: 50em;
   height: 25em;
   padding: 1em 5em;
 }
 form input[type=text], form input[type=email] {
-  width: 95%;
+  width: 98%;
+  height: 4rem;
   border: none;
   border-radius: .5rem;
   padding: 1em;
   margin-bottom: 1.5em;
   background-color: var(--color-white);
-  box-shadow: 0 0.4em 0.5em 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.4em 0.5em 0 rgba(0, 0, 0, 0.15);
+}
+form input[type=text]:hover, form input[type=email]:hover, form textarea:hover {
+  box-shadow: 0 0.4em 0.5em 0 rgba(0, 0, 0, 0.25);
 }
 
 form input[type=submit] {
   align-self: flex-end;
-  width: 8em;
-  height: 2.4em;
+  width: 5rem;
+  height: 2.4rem;
   border: none;
-  border-radius: 1em;
+  border-radius: 1rem;
   background: linear-gradient(to right, #b3307c 0%, #ff3183 100%);
   color: var(--color-white);
-  box-shadow: 0 0.4em 0.5em 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.4rem 0.5rem 0 rgba(0, 0, 0, 0.15);
   font-family: "Asap", sans-serif;
   font-weight: 100;
 }
@@ -31,14 +35,14 @@ form input[type=submit]:hover {
 form textarea {
   box-sizing: border-box;
   width: 100%;
-  height: 15em;
+  height: 17em;
   padding: 1em;
   margin: 1em 0 2em 0;
   border: none;
   border-radius: .5rem;
   background-color: var(--color-white);
   resize: none;
-  box-shadow: 0 0.4em 0.5em 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.4em 0.5em 0 rgba(0, 0, 0, 0.15);
 }
 form h2 {
   text-align: left;
@@ -58,5 +62,8 @@ form h5 {
   form {
     width: 16em;
     padding: 1em 0;
+  }
+  form input[type=text], form input[type=email] {
+    width: 92%;
   }
 }

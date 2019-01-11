@@ -13,14 +13,14 @@
 .quote, .mission {
   padding: 0 15em;
 }
-.hero, .team, .cta {
+.hero, .team, .cta, .dimensions, .reasons {
   min-height: 100vh;
 }
 .description, .quote {
-  min-height: 85vh;
+  min-height: 75vh;
 }
 .hero {
-  background: linear-gradient(to top, #b3307c 0%, #ff3183 100%);
+  background: var(--color-black);
 }
 .location{
   display: flex;
@@ -30,7 +30,7 @@
   margin-bottom: 5rem;
 }
 .mission {
-  min-height: 75vh;
+  min-height: 60vh;
   color: var(--color-white);
   background-color: var(--color-black);
 }
@@ -42,6 +42,12 @@
 }
 .team_info {
   width: 300px;
+}
+.team_info:last-child {
+  margin-right: 0;
+}
+.cta {
+  align-items: center;
 }
 /* --------------------------------------------- Footer --------------------------------------------- */
 .footer {
@@ -94,21 +100,35 @@
 }
 .description h3, .mission h3 {
   font-weight: normal;
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 40px;
+  line-height: 45px;
 }
-.description h2, .team h2 {
+.description h2, .team h2, .dimensions h2, .reasons h2 {
   padding-bottom: 1.5em;
 }
-.description h3, .team h3, .mission h3 {
+.team h3, .mission h3 {
   padding-bottom: 1em;
 }
-.quote h2 {
-  line-height: 50px;
+.mission h4 {
+  font-size: 30px;
+  line-height: 30px;
 }
-.cta h5, .cta h3 {
+.quote h2 {
+  font-size: 90px;
+  font-weight: 600;
+  line-height: 90px;
+}
+.dimensions h5, .team h5, .reasons h5 {
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 25px;
+}
+.dimensions h3, .reasons h3 {
+  line-height: 30px;
+}
+.cta h5, .cta h3, .dimensions h3, .dimensions h5, .reasons h3, .reasons h5 {
   text-align: left;
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
 }
 .footer h5, .footer a {
   text-decoration: none;
@@ -198,11 +218,19 @@ td {
   .team {
     min-height: 150vh;
   }
+  .team_info {
+    margin-right: 0;
+  }
   .quote h2 {
-    font-size: 35px;
+    font-size: 60px;
+    line-height: 60px;
   }
   .mission h3 {
+      font-size: 35px;
+      line-height: 35px;
+  }
+  .mission h4 {
       font-size: 25px;
-      line-height: 30px;
-   }
+      line-height: 25px;
+  }
 }
