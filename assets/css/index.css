@@ -76,7 +76,7 @@
 }
 /* --------------------------------------------- Image --------------------------------------------- */
 #logo {
-  margin: 8em auto 4em;
+  margin: 0 auto 4rem;
   width: 130px;
   height: auto;
 }
@@ -180,7 +180,7 @@ td {
   right: -5em;
 }
 /* ------------------------------------------ Media Queries ------------------------------------------ */
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .description, .mission, .quote, .cta {
     padding: 0 9em;
   }
