@@ -103,7 +103,7 @@
   font-size: 40px;
   line-height: 45px;
 }
-.description h2, .team h2, .dimensions h2, .reasons h2 {
+.team h2, .dimensions h2, .reasons h2 {
   padding-bottom: 1.5em;
 }
 .team h3, .mission h3 {
@@ -193,6 +193,18 @@ td {
   h4 {
     padding: 0;
   }
+  .quote h2 {
+    font-size: 70px;
+    line-height: 70px;
+  }
+  .mission h3 {
+      font-size: 30px;
+      line-height: 30px;
+  }
+  .mission h4 {
+      font-size: 20px;
+      line-height: 20px;
+  }
 }
 @media (max-width: 900px) {
   .footer {
@@ -221,16 +233,15 @@ td {
   .team_info {
     margin-right: 0;
   }
+  .team h2, .dimensions h2, .reasons h2, .cta h2 {
+    font-size: 30px;
+  }
+  .description h3 {
+    font-size: 30px;
+    line-height: 35px;
+  }
   .quote h2 {
-    font-size: 60px;
-    line-height: 60px;
-  }
-  .mission h3 {
-      font-size: 35px;
-      line-height: 35px;
-  }
-  .mission h4 {
-      font-size: 25px;
-      line-height: 25px;
+    font-size: 40px;
+    line-height: 40px;
   }
 }
