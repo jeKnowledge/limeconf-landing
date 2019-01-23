@@ -1,71 +1,70 @@
 form {
-  width: 50em;
+  width: 80%;
   height: 25em;
-  padding: 1em 5em;
 }
 form input[type=text], form input[type=email] {
-  width: 98%;
+  width: 100%;
   height: 4rem;
   border: none;
   border-radius: .5rem;
-  padding: 1em;
-  margin-bottom: 1.5em;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin-bottom: 1.5rem;
+  color: var(--color--darkgrey);
   background-color: var(--color-white);
-  box-shadow: 0 0.4em 0.5em 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.4rem 0.5rem 0 rgba(0, 0, 0, 0.15);
+  font-family: 'Mukta', sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
   transition: 0.5s;
 }
 form input[type=text]:hover, form input[type=email]:hover, form textarea:hover {
-  box-shadow: 0 0.4em 0.5em 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0.4rem 0.5rem 0 rgba(0, 0, 0, 0.25);
 }
-
 form input[type=submit] {
+  width: 6rem;
+  height: 12rem;
   align-self: flex-end;
-  width: 5rem;
-  height: 3rem;
-  border: none;
-  border-radius: 1rem;
-  background: linear-gradient(to right, #b3307c 0%, #ff3183 100%);
-  color: var(--color-white);
-  box-shadow: 0 0.4rem 0.5rem 0 rgba(0, 0, 0, 0.15);
-  font-family: "Asap", sans-serif;
-  font-weight: 100;
-}
-form input[type=submit]:hover {
-  background: linear-gradient(to right, #87215c 0%, #ff3183 100%);
-}
-form textarea {
-  box-sizing: border-box;
-  width: 100%;
-  height: 17em;
-  padding: 1em;
-  margin: 1em 0 2em 0;
+  padding: 0;
   border: none;
   border-radius: .5rem;
+  color: var(--color--darkgrey);
+  background: var(--color-grey);
+  font-family: 'Mukta', sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: 0.125em;
+  box-shadow: 0 0.4rem 0.5rem 0 rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  transition: 0.5s;
+}
+form input[type=submit]:hover {
+  box-shadow: 0 0.4rem 0.5rem 0 rgba(0, 0, 0, 0.25);
+}
+form textarea {
+  width: 100%;
+  height: 17rem;
+  padding: 1rem;
+  margin: 1rem 0 2rem 0;
+  border: none;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: var(--color--darkgrey);
   background-color: var(--color-white);
   resize: none;
-  box-shadow: 0 0.4em 0.5em 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.4rem 0.5rem 0 rgba(0, 0, 0, 0.15);
+  font-family: 'Mukta', sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
   transition: 0.5s;
 }
 form h2 {
+  font-size: 35px;
   text-align: left;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
+  color: var(--color-darkgrey);
 }
 form h5 {
   font-weight: 100;
   margin-bottom: 1rem;
-}
-@media (min-width: 701px) and (max-width: 1200px) {
-  form {
-    width: 27em;
-    padding: 1em 4em;
-  }
-}
-@media (max-width: 700px) {
-  form {
-    width: 16em;
-    padding: 1em 0;
-  }
-  form input[type=text], form input[type=email] {
-    width: 92%;
-  }
 }
