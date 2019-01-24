@@ -39,13 +39,15 @@
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 .team_info {
   width: 240px;
   margin: 0 3rem;
 }
 .dimensions .team_info {
-  flex-basis: calc(40% - 3rem);
+  flex-basis: 30%;
+  margin: 0 3rem 5rem;
 }
 .cta {
   align-items: center;
@@ -130,16 +132,25 @@ opacity: 0;
 td {
   padding:0 .5em 1em .5em;
 }
+/* ------------------------------------------ Rotating Images ------------------------------------------*/
+.scroll {
+  position: absolute;
+  z-index: -1;
+  width: 400px;
+  height: auto;
+  filter: drop-shadow(.4em .4em 2em rgba(0, 0, 0, 0.1));
+  scroll-behavior: smooth;
+}
+.scroll_left {
+  left: -10em;
+}
+.scroll_right {
+  right: -5em;
+}
 /* ------------------------------------------ Media Queries ------------------------------------------ */
 @media (max-width: 1300px) { /*13 inches laptop*/
   .description, .mission, .quote, .cta {
     padding: 0 9em;
-  }
-  .all_teams {
-    flex-wrap: wrap;
-  }
-  .reasons .team_info {
-    flex-basis: calc(100%-3rem);
   }
   .team_info {
     margin-bottom: 5rem;
@@ -156,15 +167,17 @@ td {
       line-height: 30px;
   }
 }
+@media (max-width: 1000px) { /*mobile*/
+  .reasons .team_info {
+    flex-basis: calc(100% - 20rem);
+  }
+}
 @media (max-width: 700px) { /*mobile*/
   .description, .mission, .quote, .cta {
     padding: 0 3rem;
   }
   .team h2 {
     margin-top: 10rem;
-  }
-  .team_info {
-    margin-top: 1rem;
   }
   .team h2, .dimensions h2, .reasons h2, .cta h2 {
     font-size: 30px;
@@ -180,11 +193,11 @@ td {
   .hero h1 {
     font-size: 2rem;
   }
-  .dimensions .team_info {
-    flex-basis: calc(80% - 40px);
-  }
   .support {
     max-height: 50px;
+  }
+  .reasons .team_info, .dimensions .team_info {
+    flex-basis: calc(100% - 6rem);
   }
 }
   @media (max-width: 350px) { /*mobile*/
@@ -198,20 +211,3 @@ td {
     }
   }
 }
-
-/* ------------------------------------------ Rotating Images ------------------------------------------
-.scroll {
-  position: absolute;
-  z-index: -1;
-  width: 400px;
-  height: auto;
-  filter: drop-shadow(.4em .4em 2em rgba(0, 0, 0, 0.1));
-  scroll-behavior: smooth;
-}
-.scroll_left {
-  left: -10em;
-}
-.scroll_right {
-  right: -5em;
-}
-*/
