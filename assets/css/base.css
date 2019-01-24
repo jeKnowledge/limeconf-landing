@@ -169,3 +169,8 @@ a {
     flex-direction: column;
   }
 }
+@media (max-width: 1300px) { /*tablet*/
+  .footer {
+    padding: 1rem;
+  }
+}

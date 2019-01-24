@@ -201,6 +201,9 @@ td {
   }
 }
   @media (max-width: 350px) { /*mobile*/
+    .description, .mission, .quote, .cta {
+      padding: 0 1rem;
+    }
     .mission h3 {
         font-size: 25px;
         line-height: 25px;

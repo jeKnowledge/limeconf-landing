@@ -38,7 +38,7 @@
       <div class="all_teams">
         <div class="info_logo">
           <div class="img_colorblack">
-            <img id="" src="assets/img/color-black.svg" alt="Main Logo Color-Black">
+            <img src="assets/img/color-black.svg" alt="Main Logo Color-Black">
           </div>
           <div class="buttons">
             <a href="assets/img/color-black.png" target="_blank" download="color-black.png" title="PNG">PNG</a>
@@ -47,7 +47,7 @@
         </div>
         <div class="info_logo">
           <div class="img_colorwhite">
-            <img id="" src="assets/img/color-white.svg" alt="Main Logo Color-White">
+            <img src="assets/img/color-white.svg" alt="Main Logo Color-White">
           </div>
           <div class="buttons">
             <a href="assets/img/color-white.png" target="_blank" download="color-white.png" title="PNG">PNG</a>
@@ -56,7 +56,7 @@
         </div>
         <div class="info_logo">
           <div class="img_whitewhite">
-            <img id="" src="assets/img/white-white.svg" alt="Main Logo White-White">
+            <img src="assets/img/white-white.svg" alt="Main Logo White-White">
           </div>
           <div class="buttons">
             <a href="assets/img/white-white.png" target="_blank" download="white-white.png" title="PNG">PNG</a>
@@ -70,7 +70,7 @@
       <div class="all_teams">
         <div class="info_logo">
           <div class="img_colorwhite">
-            <img id="" src="assets/img/symbol-fill-color.svg" alt="Symbol Color">
+            <img src="assets/img/symbol-fill-color.svg" alt="Symbol Color">
           </div>
           <div class="buttons">
             <a href="assets/img/symbol-fill-color.png" target="_blank" download="symbol-fill-color.png" title="PNG">PNG</a>
@@ -79,7 +79,7 @@
         </div>
         <div class="info_logo">
           <div class="img_whitewhite">
-            <img id="" src="assets/img/symbol-fill-white.svg" alt="Symbol White">
+            <img src="assets/img/symbol-fill-white.svg" alt="Symbol White">
           </div>
           <div class="buttons">
             <a href="assets/img/symbol-fill-white.png" target="_blank" download="symbol-fill-white.png" title="PNG">PNG</a>
@@ -90,7 +90,7 @@
     </div>
     <div class="download_all center">
       <h5>The previous files do not contain the displayed background.</h5>
-      <a href="">DOWNLOAD ALL</a>
+      <button onclick="downloadAll(window.links)">DOWNLOAD ALL</button>
     </div>
     <div class="footer">
       <div class="footer_collumn hidden">
@@ -124,5 +124,35 @@
       </div>
     </div>
 </div>
+<script>
+var links = [
+  'https://limeconf.com/assets/img/symbol-fill-white.svg',
+  'https://limeconf.com/assets/img/symbol-fill-white.png',
+  'https://limeconf.com/assets/img/symbol-fill-color.svg',
+  'https://limeconf.com/assets/img/symbol-fill-color.png',
+  'https://limeconf.com/assets/img/color-white.svg',
+  'https://limeconf.com/assets/img/color-white.png',
+  'https://limeconf.com/assets/img/color-black.svg',
+  'https://limeconf.com/assets/img/color-black.png',
+  'https://limeconf.com/assets/img/white-white.svg',
+  'https://limeconf.com/assets/img/white-white.png'
+];
+
+function downloadAll(urls) {
+  var link = document.createElement('a');
+
+  link.setAttribute('download', null);
+  link.style.display = 'none';
+
+  document.body.appendChild(link);
+
+  for (var i = 0; i < urls.length; i++) {
+    link.setAttribute('href', urls[i]);
+    link.click();
+  }
+
+  document.body.removeChild(link);
+}
+</script>
 </body>
 </html>
