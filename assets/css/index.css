@@ -1,12 +1,4 @@
 /* --------------------------------------------- General --------------------------------------------- */
-.container {
-  height: 100%;
-}
-.center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 .description, .cta {
   padding: 0 20em;
 }

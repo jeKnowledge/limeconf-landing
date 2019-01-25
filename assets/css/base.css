@@ -61,6 +61,14 @@ a {
   color: var(--color-lightpink);
   text-decoration: underline;
 }
+.container {
+  height: 100%;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 /* --------------------------------------------- Footer --------------------------------------------- */
 .footer {
   display: flex;
