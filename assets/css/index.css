@@ -168,8 +168,14 @@ td {
   .description, .mission, .quote, .cta {
     padding: 0 3rem;
   }
-  .team h2 {
-    margin-top: 10rem;
+  .dimensions, .reasons, .team {
+    padding: 0 1rem;
+  }
+  .mission {
+    padding: 3rem;
+  }
+  .team h2, .dimensions h2, .reasons h2 {
+    margin-top: 6rem;
   }
   .team h2, .dimensions h2, .reasons h2, .cta h2 {
     font-size: 30px;
@@ -193,7 +199,7 @@ td {
   }
 }
   @media (max-width: 350px) { /*mobile*/
-    .description, .mission, .quote, .cta {
+    .description, .quote, .cta {
       padding: 0 1rem;
     }
     .mission h3 {
