@@ -98,7 +98,7 @@
     </div>
     <div class="download_all center">
       <h5>The previous files do not contain the displayed background.</h5>
-      <button onclick="downloadAll(window.links)">DOWNLOAD ALL</button>
+      <a href="assets/img/all-logos.zip" target="_blank" download="all-logos.zip" title="ALL">DOWNLOAD ALL</a>
     </div>
     <div class="footer">
       <div class="footer_collumn hidden">
@@ -132,35 +132,5 @@
       </div>
     </div>
 </div>
-<script>
-var links = [
-  'https://limeconf.com/assets/img/symbol-fill-white.png',
-  // 'https://limeconf.com/assets/img/symbol-fill-white.png',
-  // 'https://limeconf.com/assets/img/symbol-fill-color.svg',
-  // 'https://limeconf.com/assets/img/symbol-fill-color.png',
-  // 'https://limeconf.com/assets/img/color-white.svg',
-  // 'https://limeconf.com/assets/img/color-white.png',
-  // 'https://limeconf.com/assets/img/color-black.svg',
-  // 'https://limeconf.com/assets/img/color-black.png',
-  // 'https://limeconf.com/assets/img/white-white.svg',
-  // 'https://limeconf.com/assets/img/white-white.png'
-];
-
-function downloadAll(urls) {
-  var link = document.createElement('a');
-
-  link.setAttribute('download', null);
-  link.style.display = 'none';
-
-  document.body.appendChild(link);
-
-  for (var i = 0; i < urls.length; i++) {
-    link.setAttribute('href', urls[i]);
-    link.click();
-  }
-
-  document.body.removeChild(link);
-}
-</script>
 </body>
 </html>
