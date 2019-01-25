@@ -1,6 +1,6 @@
 form {
   width: 80%;
-  height: 25em;
+  height: 30em;
 }
 form input[type=text], form input[type=email] {
   width: 100%;
@@ -23,7 +23,7 @@ form input[type=text]:hover, form input[type=email]:hover, form textarea:hover {
 }
 form input[type=submit] {
   width: 6rem;
-  height: 12rem;
+  height: 3rem;
   align-self: flex-end;
   padding: 0;
   border: none;
@@ -43,9 +43,9 @@ form input[type=submit]:hover {
 }
 form textarea {
   width: 100%;
-  height: 17rem;
+  height: 12rem;
   padding: 1rem;
-  margin: 1rem 0 2rem 0;
+  margin-bottom: 2rem;
   border: none;
   border-radius: .5rem;
   box-sizing: border-box;
@@ -67,4 +67,29 @@ form h2 {
 form h5 {
   font-weight: 100;
   margin-bottom: 1rem;
+}
+.thankyou_message {
+  margin-bottom: 1rem;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  opacity: 1; /* Firefox */
+  font-family: 'Mukta', sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: 0.125em;
+  color: var(--color-darkgrey);
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-family: 'Mukta', sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: 0.125em;
+  color: var(--color-darkgrey);
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+  font-family: 'Mukta', sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: 0.125em;
+  color: var(--color-darkgrey);
 }

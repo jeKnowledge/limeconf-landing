@@ -51,28 +51,6 @@ h5 {
   font-weight: 400;
   line-height: 1.33rem;
 }
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  opacity: 1; /* Firefox */
-  font-family: 'Mukta', sans-serif;
-  font-size: 1rem;
-  font-weight: 100;
-  letter-spacing: 0.125em;
-  color: var(--color-darkgrey);
-}
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  font-family: 'Mukta', sans-serif;
-  font-size: 1rem;
-  font-weight: 100;
-  letter-spacing: 0.125em;
-  color: var(--color-darkgrey);
-}
-::-ms-input-placeholder { /* Microsoft Edge */
-  font-family: 'Mukta', sans-serif;
-  font-size: 1rem;
-  font-weight: 100;
-  letter-spacing: 0.125em;
-  color: var(--color-darkgrey);
-}
 textarea:focus, input:focus, a:focus {
   outline: none;
 }
