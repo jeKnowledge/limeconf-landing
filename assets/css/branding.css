@@ -28,7 +28,7 @@
   background-color: black;
 }
 .img_whitewhite {
-  background: linear-gradient(to right, #b3307c 0%, #ff3183 100%);
+  background: linear-gradient(to right, #ff3183 0%, #b3307c 100%);
 }
 .buttons {
   display: flex;
