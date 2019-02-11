@@ -11,8 +11,11 @@
 .description, .quote {
   min-height: 75vh;
 }
+.dimensions, .description {
+  color: var(--color-white);
+}
 .hero {
-  background: var(--color-black);
+  /* background: var(--color-black); */
 }
 .location{
   display: flex;
@@ -23,8 +26,8 @@
 }
 .mission {
   min-height: 60vh;
-  color: var(--color-white);
-  background-color: var(--color-black);
+  /* color: var(--color-white);
+  background-color: var(--color-black); */
 }
 .all_teams {
   display: flex;
@@ -78,9 +81,12 @@ opacity: 0;
   line-height: 45px;
 }
 .team h2, .dimensions h2, .reasons h2 {
-  color: var(--color-darkgrey);
+  color: var(--color-black);
   font-size: 35px;
   padding-bottom: 2.5em;
+}
+.dimensions h2 {
+  color: var(--color-white);
 }
 .team h3, .mission h3 {
   padding-bottom: 1em;
@@ -102,6 +108,7 @@ opacity: 0;
 }
 .dimensions h3, .reasons h3 {
   line-height: 30px;
+  font-family: 'Asap', sans-serif;
 }
 .cta h3, .cta h5, .dimensions h3, .dimensions h5, .reasons h3, .reasons h5 {
   text-align: left;
