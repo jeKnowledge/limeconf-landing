@@ -1,7 +1,8 @@
 html {
   overflow-x: hidden;
   width: 100%;
-background: linear-gradient(to bottom, #191919, #31283c, #55335c, #833974, #b73882, #cd4e96, #e463aa, #fb78be, #f3a0df, #eec3f4, #f0e3fe, #ffffff);  color: var(--color-black);
+  background: var(--color-white);
+  /* background: linear-gradient(to bottom, #191919, #31283c, #55335c, #833974, #b73882, #cd4e96, #e463aa, #fb78be, #f3a0df, #eec3f4, #f0e3fe, #ffffff);  color: var(--color-black); */
   font-family: 'Mukta', sans-serif;
   font-size: 16px;
 }
@@ -74,7 +75,7 @@ a {
   flex-direction: row;
   align-items: flex-start;
   padding: 4rem 7rem;
-  /* background: var(--color-grey); */
+  background: var(--color-grey);
   min-height: 40vh;
 }
 .footer_collumn {

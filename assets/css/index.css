@@ -11,11 +11,8 @@
 .description, .quote {
   min-height: 75vh;
 }
-.dimensions, .description {
-  color: var(--color-white);
-}
 .hero {
-  /* background: var(--color-black); */
+  background: var(--color-black);
 }
 .location{
   display: flex;
@@ -26,8 +23,8 @@
 }
 .mission {
   min-height: 60vh;
-  /* color: var(--color-white);
-  background-color: var(--color-black); */
+  color: var(--color-white);
+  background-color: var(--color-black);
 }
 .all_teams {
   display: flex;
@@ -84,9 +81,6 @@ opacity: 0;
   color: var(--color-black);
   font-size: 35px;
   padding-bottom: 2.5em;
-}
-.dimensions h2 {
-  color: var(--color-white);
 }
 .team h3, .mission h3 {
   padding-bottom: 1em;
