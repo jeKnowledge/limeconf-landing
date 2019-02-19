@@ -1,30 +1,32 @@
 /* --------------------------------------------- General --------------------------------------------- */
+body {
+  transition: background-color 1s ease;
+}
 .description, .cta {
-  padding: 0 20em;
+  padding: 0 20rem;
 }
-.quote, .mission {
-  padding: 0 15em;
+.quote, .mission, .tickets {
+  padding: 0 15rem;
 }
-.hero, .team, .cta, .dimensions, .reasons {
+.hero, .team, .cta, .program, .reasons {
   min-height: 100vh;
 }
 .description, .quote {
   min-height: 75vh;
 }
-.hero {
-  background: var(--color-black);
+.description {
+  color: var(--color-white);
 }
 .location{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
-.mission {
+.mission, .tickets {
   min-height: 60vh;
   color: var(--color-white);
-  background-color: var(--color-black);
 }
 .all_teams {
   display: flex;
@@ -37,12 +39,43 @@
   width: 240px;
   margin: 0 3rem;
 }
-.dimensions .team_info {
-  flex-basis: 30%;
+.program .team_info {
   margin: 0 3rem 5rem;
 }
 .cta {
   align-items: center;
+}
+.buttons {
+  display: flex;
+ justify-content: center;
+}
+.buttons a {
+  width: 6rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 4rem 0;
+  border: none;
+  border-radius: .25rem;
+  color: var(--color-darkgrey);
+  background: var(--color-white);
+  box-shadow: 0 0.4rem 0.5rem 0 rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  transition: 0.5s;
+}
+.mission .buttons a {
+  margin-bottom: 0;
+}
+.tickets .buttons a {
+  margin: 0;
+}
+.talk {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: .5rem 0;
 }
 /* --------------------------------------------- Image --------------------------------------------- */
 #logo {
@@ -54,7 +87,7 @@
 .triangle {
   position: absolute;
   color: black;
-opacity: 0;
+  opacity: 0;
  filter: drop-shadow(1rem 10rem 20rem rgba(255, 255, 255, 0.1));
 }
 .team img {
@@ -65,24 +98,24 @@ opacity: 0;
 }
 /* --------------------------------------------- Text --------------------------------------------- */
 .hero h3 {
-  margin: 4em 0 1em 0;
+  margin-bottom: 1rem;
   color: var(--color-white);
 }
 .hero h5 {
   margin-left: .5rem;
   color: var(--color-white);
 }
-.description h3, .mission h3 {
+.description h3, .mission h3, .tickets h3{
   font-weight: normal;
   font-size: 40px;
   line-height: 45px;
 }
-.team h2, .dimensions h2, .reasons h2 {
+.team h2, .program h2, .reasons h2 {
   color: var(--color-black);
   font-size: 35px;
   padding-bottom: 2.5em;
 }
-.team h3, .mission h3 {
+.team h3, .mission h3, .tickets h3 {
   padding-bottom: 1em;
 }
 .mission h4 {
@@ -95,18 +128,24 @@ opacity: 0;
   font-weight: 500;
   line-height: 80px;
 }
-.dimensions h5, .team h5, .reasons h5 {
+.program h5, .team h5, .reasons h5 {
   font-size: 20px;
   font-weight: 100;
   line-height: 25px;
 }
-.dimensions h3, .reasons h3 {
+.program h3, .reasons h3 {
   line-height: 30px;
   font-family: 'Asap', sans-serif;
 }
-.cta h3, .cta h5, .dimensions h3, .dimensions h5, .reasons h3, .reasons h5 {
+.cta h3, .cta h5, .program h3, .program h5, .reasons h3, .reasons h5 {
   text-align: left;
   margin-bottom: 1rem;
+}
+.talk h5:first-child {
+  margin-bottom: .5rem;
+}
+.talk h5:last-child {
+  margin: 0;
 }
 /* --------------------------------------------- Countdown --------------------------------------------- */
 .countdown {
@@ -114,16 +153,16 @@ opacity: 0;
   color: var(--color-white);
   text-align: center;
   font-weight: 200;
-  letter-spacing: 0.105em;
+  letter-spacing: 0.105rem;
 }
 .countdown_letters {
-  font-size: .7em;
+  font-size: .7rem;
 }
 .countdown_numbers {
-  font-size: 1em;
+  font-size: 1rem;
 }
 td {
-  padding:0 .5em 1em .5em;
+  padding:0 .5rem .5rem .5rem;
 }
 /* ------------------------------------------ Rotating Images ------------------------------------------*/
 .scroll {
@@ -131,19 +170,32 @@ td {
   z-index: -1;
   width: 400px;
   height: auto;
-  filter: drop-shadow(.4em .4em 2em rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(.4rem .4rem 2rem rgba(0, 0, 0, 0.1));
   scroll-behavior: smooth;
 }
 .scroll_left {
-  left: -10em;
+  left: -10rem;
 }
 .scroll_right {
-  right: -5em;
+  right: -5rem;
+}
+/* ------------------------------------------ Colors ------------------------------------------*/
+.color-white {
+  background-color: #ffffff;
+}
+.color-black {
+  background-color: #000000;
+}
+.color-lightpink {
+  background-color: #FF3183;
+}
+.color-grey {
+  background-color: rgba(0,0,0,0.05);
 }
 /* ------------------------------------------ Media Queries ------------------------------------------ */
 @media (max-width: 1300px) { /*13 inches laptop*/
-  .description, .mission, .quote, .cta {
-    padding: 0 9em;
+  .description, .mission, .quote, .cta, .tickets {
+    padding: 0 9rem;
   }
   .team_info {
     margin-bottom: 5rem;
@@ -155,7 +207,7 @@ td {
     font-size: 70px;
     line-height: 70px;
   }
-  .mission h3 {
+  .mission h3, .tickets h3 {
       font-size: 30px;
       line-height: 30px;
   }
@@ -166,19 +218,19 @@ td {
   }
 }
 @media (max-width: 700px) { /*mobile*/
-  .description, .mission, .quote, .cta {
+  .description, .quote, .cta, .mission, .tickets {
     padding: 0 3rem;
   }
-  .dimensions, .reasons, .team {
+  .program, .reasons, .team {
     padding: 0 1rem;
   }
-  .mission {
+  .mission .tickets {
     padding: 3rem;
   }
-  .team h2, .dimensions h2, .reasons h2 {
+  .team h2, .program h2, .reasons h2 {
     margin-top: 6rem;
   }
-  .team h2, .dimensions h2, .reasons h2, .cta h2 {
+  .team h2, .program h2, .reasons h2, .cta h2 {
     font-size: 30px;
   }
   .description h3 {
@@ -195,15 +247,15 @@ td {
   .support {
     max-height: 50px;
   }
-  .reasons .team_info, .dimensions .team_info {
+  .reasons .team_info, .program .team_info {
     flex-basis: calc(100% - 6rem);
   }
 }
   @media (max-width: 350px) { /*mobile*/
-    .description, .quote, .cta {
+    .description, .quote, .cta, .mission {
       padding: 0 1rem;
     }
-    .mission h3 {
+    .mission h3, .tickets h3 {
         font-size: 25px;
         line-height: 25px;
     }

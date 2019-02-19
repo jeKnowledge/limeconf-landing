@@ -33,15 +33,20 @@
   <link href="assets/css/base.css" rel="stylesheet"/>
   <link href="assets/css/index.css" rel="stylesheet"/>
   <script src="assets/javascript/countdown.js"></script>
+  <script type="text/javascript" src="assets/javascript/bgcolor.js"></script>
   <script data-cfasync="false" type="text/javascript" src="assets/javascript/form-submission-handler.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
   <div class="container">
-    <div class="hero center">
+    <div class="hero center panel" data-color="black">
       <a href="https://limeconf.com/" class="center">
         <img id="logo" src="assets/img/color-white.svg" alt="lime conference">
       </a>
       <h1>Problem Solving &</br>team performance</h1>
+      <div class="buttons">
+        <a href="" target="_blank" title="TICKETS">TICKETS</a>
+      </div>
       <h3>13 April 2019</h3>
       <div class="location">
         <img alt="location" src="assets/img/location.png" width="15" height=auto>
@@ -62,52 +67,75 @@
         </tr>
       </table>
     </div>
-    <div class="description center">
-      <svg id="first_triangle" class="scroll scroll_left hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 443.49 443.49"><defs><style>.cls-1{fill:#fff;}</style></defs><path class="cls-1" d="M9.81,158,285.5,433.68c18.19,18.19,49.25,9.87,55.91-15L442.32,42.1C449,17.25,426.24-5.48,401.39,1.17L24.79,102.09C-.06,108.74-8.38,139.8,9.81,158Z"/></svg>
+    <div class="description center panel" data-color="lightpink">
+      <!-- <svg id="first_triangle" class="scroll scroll_left hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 443.49 443.49"><defs><style>.cls-1{fill:#fff;}</style></defs><path class="cls-1" d="M9.81,158,285.5,433.68c18.19,18.19,49.25,9.87,55.91-15L442.32,42.1C449,17.25,426.24-5.48,401.39,1.17L24.79,102.09C-.06,108.74-8.38,139.8,9.81,158Z"/></svg> -->
       <h3>
           A one-day conference dedicated to
           <span style="font-weight:bolder">problem solving and team performance concepts as pragmatic solutions</span>
           for everyday challenges.
       </h3>
     </div>
-    <div class="dimensions center">
-      <svg id="second_triangle" class="scroll scroll_right hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 443.49 443.49"><defs><style>.cls-1{fill:#fff;}</style></defs><path class="cls-1" d="M9.81,158,285.5,433.68c18.19,18.19,49.25,9.87,55.91-15L442.32,42.1C449,17.25,426.24-5.48,401.39,1.17L24.79,102.09C-.06,108.74-8.38,139.8,9.81,158Z"/></svg>
-      <h2>Multiple dimensions</h2>
+    <div class="program center panel" data-color="white">
+      <!-- <svg id="second_triangle" class="scroll scroll_right hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 443.49 443.49"><defs><style>.cls-1{fill:#fff;}</style></defs><path class="cls-1" d="M9.81,158,285.5,433.68c18.19,18.19,49.25,9.87,55.91-15L442.32,42.1C449,17.25,426.24-5.48,401.39,1.17L24.79,102.09C-.06,108.74-8.38,139.8,9.81,158Z"/></svg> -->
+      <h2>Program</h2>
       <div class="all_teams">
         <div class="center team_info">
           <h3>TALKS</h3>
           <h5>
             A pool of speakers brought to inspire you about the influencing aspects of performance at work.
           </h5>
+          <div class="talk">
+            <h5 style="font-weight:bolder">Corporate Performance</h5>
+            <h5>Thomas de Bresser</h5>
+          </div>
+          <div class="talk">
+            <h5 style="font-weight:bolder">Consumer Experience</h5>
+            <h5>Susana Branco</h5>
+          </div>
+          <div class="talk">
+            <h5 style="font-weight:bolder">Business Innovation</h5>
+            <h5>Someone I</h5>
+          </div>
+          <div class="talk">
+            <h5 style="font-weight:bolder">Humor at Work</h5>
+            <h5>Mário Moreira</h5>
+          </div>
         </div>
         <div class="center team_info">
           <h3>WORKSHOP</h3>
           <h5>
-            Getting your hands dirty on human centered innovation with a workshop on design thinking.
+            Get your hands dirty on human centered innovation and design thinking.
           </h5>
+          <div class="talk">
+            <h5 style="font-weight:bolder">Human Centered Innovation</h5>
+            <h5>Stigma</h5>
+          </div>
         </div>
         <div class="center team_info">
           <h3>1<span style="font-weight:100">ON</span>1 MEETINGS</h3>
           <h5>
-            Do you have a specific challenge that could benefit from some help?
+            Do you have a specific challenge that could benefit from some help?<br><br>
             We are setting up 1on1 meetings with experienced entrepreneurs from the local ecosystem.
           </h5>
         </div>
         <div class="center team_info">
           <h3>SHOWCASE</h3>
           <h5>
-            Want to be inspired by some of the best ideas implemented in Coimbra?
+            Want to be inspired by some of the best ideas implemented in Coimbra?<br><br>
             We will present you useful solutions that you can use in your challenges.
           </h5>
         </div>
       </div>
     </div>
-    <div class="quote center">
-      <svg id="third_triangle" class="scroll scroll_left hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 443.49 443.49"><defs><style>.cls-1{fill:#fff;}</style></defs><path class="cls-1" d="M9.81,158,285.5,433.68c18.19,18.19,49.25,9.87,55.91-15L442.32,42.1C449,17.25,426.24-5.48,401.39,1.17L24.79,102.09C-.06,108.74-8.38,139.8,9.81,158Z"/></svg>
-      <h2>nothing beats</br><span style="font-weight:bolder">the power of meeting</span></br> fellow problem solvers</h2>
+    <div class="mission center panel" data-color="lightpink">
+      <h3>The mission of Lime Conference is to join people who like to execute.</h3>
+      <h4>As more and more complex problems our teams are facing, it’s time to truly deep dive into a human centric approach to improve team performance and innovative results.</h4>
+      <div class="buttons">
+        <a href="" target="_blank" title="TICKETS">TICKETS</a>
+      </div>
     </div>
-    <div class="reasons center">
-      <svg id="third_triangle" class="scroll scroll_right hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 443.49 443.49"><defs><style>.cls-1{fill:#fff;}</style></defs><path class="cls-1" d="M9.81,158,285.5,433.68c18.19,18.19,49.25,9.87,55.91-15L442.32,42.1C449,17.25,426.24-5.48,401.39,1.17L24.79,102.09C-.06,108.74-8.38,139.8,9.81,158Z"/></svg>
+    <div class="reasons center panel" data-color="white">
+      <!-- <svg id="third_triangle" class="scroll scroll_right hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 443.49 443.49"><defs><style>.cls-1{fill:#fff;}</style></defs><path class="cls-1" d="M9.81,158,285.5,433.68c18.19,18.19,49.25,9.87,55.91-15L442.32,42.1C449,17.25,426.24-5.48,401.39,1.17L24.79,102.09C-.06,108.74-8.38,139.8,9.81,158Z"/></svg> -->
       <h2>3 Reasons Why</h2>
       <div class="all_teams">
         <div class="center team_info">
@@ -125,17 +153,36 @@
         <div class="center team_info">
           <h3>MASTER YOUR CRAFT</h3>
           <h5>
-            Exploring the forward-thinking culture, you will understand the fundamental needs and principles of rocket fuelled people.
+            Exploring the forward- thinking culture, you will understand the fundamental needs and principles of rocket fuelled people.
           </h5>
         </div>
       </div>
     </div>
-    <div class="mission center">
-      <h3>The mission of Lime Conference is to develop a design thinking mindset along the entrepreneurial community.</h3>
-      <h4>As more and more complex problems our teams are facing, it’s time to truly deep dive into a human centric approach to improve team performance and creative leadership.</h4>
+    <div class="quote center panel" data-color="white">
+      <!-- <svg id="third_triangle" class="scroll scroll_left hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 443.49 443.49"><defs><style>.cls-1{fill:#fff;}</style></defs><path class="cls-1" d="M9.81,158,285.5,433.68c18.19,18.19,49.25,9.87,55.91-15L442.32,42.1C449,17.25,426.24-5.48,401.39,1.17L24.79,102.09C-.06,108.74-8.38,139.8,9.81,158Z"/></svg> -->
+      <h2>nothing beats</br><span style="font-weight:bolder">the power of meeting</span></br> fellow problem solvers</h2>
     </div>
-    <div class="team center">
-      <svg id="fourth_triangle" class="scroll scroll_left hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 443.49 443.49"><defs><style>.cls-1{fill:#fff;}</style></defs><path class="cls-1" d="M9.81,158,285.5,433.68c18.19,18.19,49.25,9.87,55.91-15L442.32,42.1C449,17.25,426.24-5.48,401.39,1.17L24.79,102.09C-.06,108.74-8.38,139.8,9.81,158Z"/></svg>
+    <div class="cta center panel" data-color="white">
+      <!-- <svg id="five_triangle" class="scroll scroll_right hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 443.49 443.49"><defs><style>.cls-1{fill:#fff;}</style></defs><path class="cls-1" d="M9.81,158,285.5,433.68c18.19,18.19,49.25,9.87,55.91-15L442.32,42.1C449,17.25,426.24-5.48,401.39,1.17L24.79,102.09C-.06,108.74-8.38,139.8,9.81,158Z"/></svg> -->
+      <form name="contact" method="POST" data-netlify="true" class="center gform" action="https://script.google.com/macros/s/AKfycbzmMOzPZ1j5xR3oM8NvC0Fh7_7zqK3-y30dEXUrKwAvx3n5Ajo/exec">
+        <h2>Let's bounce ideas off each other</h2>
+        <h5>We love to keep our dear participants well informed. Subscribe to get first-hand news about Lime Conference!</h5>
+        <div style="display:none" class="thankyou_message">
+           <!-- You can customize the thankyou message by editing the code below -->
+           <h5>Thank you for your message</h5>
+        </div>
+        <input type="email" name="email" placeholder="EMAIL">
+        <input type="submit" value="SUBSCRIBE">
+      </form>
+    </div>
+    <div class="tickets center panel" data-color="lightpink">
+      <h3> WANT TO JOIN US ON THE 13TH OF APRIL?</h3>
+      <div class="buttons">
+        <a href="" target="_blank" title="TICKETS">TICKETS</a>
+      </div>
+    </div>
+    <div class="team center panel" data-color="white">
+      <!-- <svg id="fourth_triangle" class="scroll scroll_left hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 443.49 443.49"><defs><style>.cls-1{fill:#fff;}</style></defs><path class="cls-1" d="M9.81,158,285.5,433.68c18.19,18.19,49.25,9.87,55.91-15L442.32,42.1C449,17.25,426.24-5.48,401.39,1.17L24.79,102.09C-.06,108.74-8.38,139.8,9.81,158Z"/></svg> -->
       <h2>organizing team</h2>
       <div class="all_teams">
         <div class="center team_info">
@@ -158,20 +205,7 @@
         </div>
       </div>
     </div>
-    <div class="cta center">
-      <svg id="five_triangle" class="scroll scroll_right hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 443.49 443.49"><defs><style>.cls-1{fill:#fff;}</style></defs><path class="cls-1" d="M9.81,158,285.5,433.68c18.19,18.19,49.25,9.87,55.91-15L442.32,42.1C449,17.25,426.24-5.48,401.39,1.17L24.79,102.09C-.06,108.74-8.38,139.8,9.81,158Z"/></svg>
-      <form name="contact" method="POST" data-netlify="true" class="center gform" action="https://script.google.com/macros/s/AKfycbzmMOzPZ1j5xR3oM8NvC0Fh7_7zqK3-y30dEXUrKwAvx3n5Ajo/exec">
-        <h2>Let's bounce ideas off each other</h2>
-        <h5>We love to keep our dear participants well informed. Subscribe to get first-hand news about Lime Conference!</h5>
-        <div style="display:none" class="thankyou_message">
-           <!-- You can customize the thankyou message by editing the code below -->
-           <h5>Thank you for your message</h5>
-        </div>
-        <input type="email" name="email" placeholder="EMAIL">
-        <input type="submit" value="SEND">
-      </form>
-    </div>
-    <div class="footer">
+    <div class="footer panel" data-color="grey">
       <div class="footer_collumn">
         <div class="footer_collumn inside_collum">
           <a href="https://limeconf.com/" class="center">
@@ -224,37 +258,68 @@
     </div>
 </div>
 <script>
-;(function() {
-    var throttle = function(type, name, obj) {
-        var obj = obj || window;
-        var running = false;
-        var func = function() {
-            if (running) { return; }
-            running = true;
-            requestAnimationFrame(function() {
-                obj.dispatchEvent(new CustomEvent(name));
-                running = false;
-            });
-        };
-        obj.addEventListener(type, func);
-    };
-    throttle ("scroll", "optimizedScroll");
-})();
+// ;(function() {
+//     var throttle = function(type, name, obj) {
+//         var obj = obj || window;
+//         var running = false;
+//         var func = function() {
+//             if (running) { return; }
+//             running = true;
+//             requestAnimationFrame(function() {
+//                 obj.dispatchEvent(new CustomEvent(name));
+//                 running = false;
+//             });
+//         };
+//         obj.addEventListener(type, func);
+//     };
+//     throttle ("scroll", "optimizedScroll");
+// })();
+//
+// var gear1 = document.getElementById("first_triangle");
+// var gear2 = document.getElementById("second_triangle");
+// var gear3 = document.getElementById("third_triangle");
+// var gear4 = document.getElementById("fourth_triangle");
+// var gear5 = document.getElementById("five_triangle");
+//
+//
+// window.addEventListener("optimizedScroll", function() {
+//     gear1.style.transform = "rotate("+window.pageYOffset/30+"deg)";
+//     gear2.style.transform = "rotate("+window.pageYOffset/30+"deg)";
+//     gear3.style.transform = "rotate("+window.pageYOffset/30+"deg)";
+//     gear4.style.transform = "rotate("+window.pageYOffset/30+"deg)";
+//     gear5.style.transform = "rotate("+window.pageYOffset/30+"deg)";
+// });
 
-var gear1 = document.getElementById("first_triangle");
-var gear2 = document.getElementById("second_triangle");
-var gear3 = document.getElementById("third_triangle");
-var gear4 = document.getElementById("fourth_triangle");
-var gear5 = document.getElementById("five_triangle");
+$(window).scroll(function() {
 
+  // selectors
+  var $window = $(window),
+      $body = $('body'),
+      $panel = $('.panel');
 
-window.addEventListener("optimizedScroll", function() {
-    gear1.style.transform = "rotate("+window.pageYOffset/30+"deg)";
-    gear2.style.transform = "rotate("+window.pageYOffset/30+"deg)";
-    gear3.style.transform = "rotate("+window.pageYOffset/30+"deg)";
-    gear4.style.transform = "rotate("+window.pageYOffset/30+"deg)";
-    gear5.style.transform = "rotate("+window.pageYOffset/30+"deg)";
-});
+  // Change 33% earlier than scroll position so colour is there when you arrive.
+  var scroll = $window.scrollTop() + ($window.height()/1.7);
+
+  $panel.each(function () {
+    var $this = $(this);
+
+    // if position is within range of this panel.
+    // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
+    // Remember we set the scroll to 33% earlier in scroll var.
+    if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
+
+      // Remove all classes on body with color-
+      $body.removeClass(function (index, css) {
+        return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
+      });
+
+      // Add class of currently active div
+      $body.addClass('color-' + $(this).data('color'));
+    }
+  });
+
+}).scroll();
+
 </script>
 </body>
 </html>
