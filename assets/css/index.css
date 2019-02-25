@@ -226,6 +226,9 @@ td {
       font-size: 30px;
       line-height: 30px;
   }
+  .mission h4 {
+    padding: 0 4rem 4rem 4rem;
+  }
 }
 @media (max-width: 1000px) { /*mobile*/
   .reasons .team_info {
@@ -265,6 +268,9 @@ td {
   .reasons .team_info, .program .team_info {
     flex-basis: calc(100% - 6rem);
   }
+  .mission h4 {
+    padding: 0 2rem 2rem 2rem;
+  }
 }
   @media (max-width: 350px) { /*mobile*/
     .description, .quote, .cta, .mission {
@@ -277,6 +283,8 @@ td {
     .mission h4 {
         font-size: 16px;
         line-height: 16px;
+        padding: 0 0 2rem 0;
+
     }
   }
 }
