@@ -36,7 +36,6 @@ h2 {
 }
 h3 {
   font-size: 30px;
-  font-weight: 600;
   letter-spacing: 0.025rem;
 }
 h4 {
@@ -97,8 +96,11 @@ a {
   margin-right: 4rem;
 }
 .support {
-  max-height: 60px;
+  max-height: 45px;
   margin-bottom: 1rem;
+}
+#inovc {
+  max-height: 70px;
 }
 .inside_collum {
   margin-right: 0;
@@ -107,7 +109,7 @@ a {
   margin-top: 4rem;
 }
 #footer {
-  width: 100px;
+  width: 130px;
   height: auto;
 }
 .social_networks {
@@ -119,11 +121,12 @@ a {
 }
 .footer h5, .footer a {
   text-decoration: none;
-  color: var(--color-black);
+  color: var(--color-darkgrey);
   margin-bottom: .5rem;
 }
 .footer_collumn h2 {
   font-size: 20px;
+  font-weight: 600;
   margin-bottom: 1.5rem;
   text-align: left;
 }

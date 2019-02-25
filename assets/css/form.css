@@ -31,8 +31,6 @@ form input[type=submit] {
   background: var(--color-grey);
   font-family: 'Mukta', sans-serif;
   font-size: 1rem;
-  font-weight: 100;
-  letter-spacing: 0.125em;
   box-shadow: 0 0.4rem 0.5rem 0 rgba(0, 0, 0, 0.15);
   text-decoration: none;
   transition: 0.5s;
@@ -91,4 +89,10 @@ form h5 {
   font-weight: 100;
   letter-spacing: 0.125em;
   color: var(--color-darkgrey);
+}
+label {
+  font-family: 'ASAP', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1rem 0;
 }
