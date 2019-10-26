@@ -1,0 +1,206 @@
+/* --------------------------------------------- General --------------------------------------------- */
+video {
+  position:absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.description {
+  min-height: 100vh;
+  padding: 0 20rem;
+  color: var(--color-white);
+}
+
+.mission {
+  min-height: 60vh;
+  padding: 0 14rem;
+  color: var(--color-white);
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 100px;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  color: var(--color-white);
+}
+
+.slider_img {
+  width: 60vw;
+  overflow: hidden;
+}
+
+.program {
+  min-height: 150vh;
+}
+
+.program_img {
+  width: 300px;
+  height: auto;
+}
+
+.program_text {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  text-align: center;
+  color: var(--color-white);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-60%, -50%);
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.row_speaker {
+  display: flex;
+  justify-content: center;
+}
+
+.speaker1, .speaker2, .speaker3 {
+  position: relative;
+}
+
+.speaker1:hover .program_text, .speaker2:hover .program_text, .speaker3:hover .program_text {
+  opacity: 1;
+}
+/* --------------------------------------------- Text --------------------------------------------- */
+.team h2, .program h2, .reasons h2 {
+  padding-bottom: 2.5rem;
+  font-size: 2rem;
+  color: var(--color-black);
+}
+
+.description h3, .mission h3 {
+  font-weight: normal;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+.team h3, .mission h3 {
+  padding-bottom: 1rem;
+}
+
+.mission h3 {
+  font-weight: 600;
+}
+
+.mission h4 {
+  padding: 0 11rem 5rem 11rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.program h2 {
+  margin-top: 200px;
+  color: var(--color-white);
+}
+
+.program h3 {
+  margin-bottom: 1rem;
+  text-align: left;
+  font-family: 'Asap', sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.program h5 {
+  font-size: 1.2rem;
+  font-weight: 100;
+  line-height: 1.5rem;
+}
+/* ------------------------------------------ Media Queries ------------------------------------------ */
+@media (max-width: 1300px) { /*13 inches laptop*/
+  .description, .mission {
+    padding: 5rem 9rem 0 9rem;
+  }
+
+  .mission h3 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .mission h4 {
+    padding: 0 4rem 4rem 4rem;
+  }
+}
+
+@media (max-width: 1000px) { /*mobile*/
+  .program_img {
+    width: 200px;
+  }
+
+  .program_text {
+    font-size: 10px;
+    top: 45%;
+    left: 50%
+  }
+}
+
+@media (max-width: 700px) { /*mobile*/
+  .description, .mission {
+    padding: 0 3rem;
+  }
+
+  .program {
+    padding: 0 1rem;
+  }
+
+  .mission {
+    padding: 3rem;
+  }
+
+  .program_img {
+    width: 150px;
+  }
+
+  .program_text {
+    font-size: 8px;
+    top: 45%;
+    left: 50%
+  }
+
+  .mission h4 {
+    padding: 0 2rem 2rem 2rem;
+  }
+
+  .program h2 {
+    margin-top: 6rem;
+  }
+
+  .description h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (max-width: 350px) { /*mobile*/
+  .description, .mission {
+    padding: 0 1rem;
+  }
+
+  .program_img {
+    width: 100px;
+  }
+
+  .mission h3 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .mission h4 {
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 0 0 2rem 0;
+  }
+}
