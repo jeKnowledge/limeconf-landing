@@ -89,9 +89,12 @@
 
 .coming-soon h5 {
   z-index: 2;
-  font-size: 80px;
+  font-size: 60px;
   line-height: normal;
   color: var(--color-white);
+  font-family: 'Asap' , sans-serif;
+  font-weight: 500;
+
 }
 
 .team h5, .reasons h5 {
@@ -109,6 +112,10 @@
 .cta h3, .cta h5, .reasons h3, .reasons h5 {
   text-align: left;
   margin-bottom: 1rem;
+}
+#look{
+  font-size: 1.3em;
+
 }
 
 /* ------------------------------------------ Background Colors ------------------------------------------*/
@@ -130,10 +137,11 @@
 /* ------------------------------------------ Media Queries ------------------------------------------ */
 @media (max-width: 1300px) { /*13 inches laptop*/
   .cta {
-    padding: 5rem 9rem 0;
+    padding: 1rem 9rem 0;
   }
 
   .team_info {
+
     margin-bottom: 5rem;
   }
 
@@ -156,9 +164,9 @@
   .reasons, .team {
     padding: 0 1rem;
   }
-  
+
   .team h2, .reasons h2 {
-    margin-top: 6rem;
+    margin-top: 8rem;
   }
 
   .hero h1 {

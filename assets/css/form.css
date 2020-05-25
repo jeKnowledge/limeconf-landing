@@ -59,7 +59,7 @@ form h2 {
   font-size: 35px;
   text-align: left;
   margin-bottom: .5rem;
-  color: var(--color-darkgrey);
+  color: black;
 }
 form h5 {
   font-weight: 100;

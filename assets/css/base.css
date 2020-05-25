@@ -74,7 +74,7 @@ a {
   align-items: flex-start;
   padding: 4rem 7rem;
   background: var(--color-grey);
-  min-height: 40vh;
+  min-height: 30vh;
 }
 .footer_collumn {
   display: flex;
