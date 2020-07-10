@@ -114,8 +114,11 @@
   margin-bottom: 1rem;
 }
 #look{
-  font-size: 1.3em;
-
+  font-size: 1.2em;
+  font-weight: 500;
+}
+#arrow-down{
+  margin: 1% auto;
 }
 
 /* ------------------------------------------ Background Colors ------------------------------------------*/
